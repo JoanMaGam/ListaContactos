@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contactos</title>
+
+    <script src="./js/data.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <form action="#" method="GET" id="form">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" placeholder="Introduce un nombre" id="name" name="name">
+                    <!-- El 'id=' tiene que ser igual al 'for=' del label para que cuando cliques encima de cualquera se marque la caja de input. -->
+                </div>
+                <div>
+                    <label for="phone">Telefono</label>
+                    <input type="text" placeholder="Introduce un telefono" id="phone" name="phone">
+                </div>
+
+                <input type="submit" value="Guardar">
+            </form>
+        </header>
+        <hr>
+        <main>
+            <h1>Lista de contactos</h1>
+            <ul id="contactos">
+
+            </ul>
+        </main>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
